@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private fun validateFields() {
         binding.apply {
             if (etLogIn.text.isEmpty() || etPassword.text.isEmpty())
-                validator = Validator.Error(ErrorCases.EmptyFields("Fields cannot be empty"))
+                validator = Validator.Error(ErrorCases.EmptyFields("Text Fields cannot be empty"))
 
 
             if (etLogIn.text.endsWith("@gmail.com") && etPassword.text.length >= 8) {
