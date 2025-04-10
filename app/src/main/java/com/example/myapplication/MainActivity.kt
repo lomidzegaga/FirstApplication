@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+        binding.etLogIn.setText("shdv@gmail.com")
+        binding.etPassword.setText("ashgdchascdahsvd")
+
         binding.btnLogIn.setOnClickListener { validateFields() }
     }
 
